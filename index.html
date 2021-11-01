@@ -64,39 +64,45 @@
                 </svg>
               </button>
               <form class="modal-form">
-                <p>Оставьте свои данные, мы вам перезвоним</p>
-                <div class="modal-form-field person">
-                  <label for="person">Имя</label>
-                  <input
-                    type="text"
-                    name="person"
-                    class="person-input"
-                    id="person"
-                  />
-                </div>
-                <div class="modal-form-field tel">
-                  <label for="">Телефон</label>
-                  <input type="tel" name="tel" class="tel-input" id="tel" />
-                </div>
-                <div class="modal-form-field mail">
-                  <label>Почта</label>
-                  <input
-                    type="email"
-                    name="mail"
-                    class="mail-input"
-                    id="mail"
-                  />
-                </div>
-                <div class="modal-form-field comments">
-                  <label for="comments">Комментарий</label>
-                  <input
-                    type="textarea"
-                    name="comments"
-                    class="comments-input"
-                    id="comments"
-                  />
-                </div>
-                <div class="modal-form-field agreement">
+                <p class="modal-form-title">
+                  Оставьте свои данные, мы вам перезвоним
+                </p>
+                <ul class="modal-form-list">
+                  <li class="modal-form-list-item">
+                    <label for="person">Имя</label>
+                    <input
+                      type="text"
+                      name="person"
+                      class="person-input"
+                      id="person"
+                      autofocus
+                    />
+                  </li>
+                  <li class="modal-form-list-item">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" class="tel-input" id="tel" />
+                  </li>
+                  <li class="modal-form-list-item">
+                    <label for="mail">Почта</label>
+                    <input
+                      type="email"
+                      name="mail"
+                      class="mail-input"
+                      id="mail"
+                    />
+                  </li>
+                  <li class="modal-form-list-item">
+                    <label for="comments">Комментарий</label>
+                    <textarea
+                      name="comments"
+                      class="comments"
+                      id="comments"
+                      rows="8"
+                    ></textarea>
+                  </li>
+                </ul>
+
+                <div class="agreement">
                   <input
                     type="checkbox"
                     name="agreement"

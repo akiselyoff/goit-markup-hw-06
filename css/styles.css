@@ -177,7 +177,8 @@ a,
   text-transform: uppercase;
 }
 .hero-btn,
-.subscribe-btn {
+.subscribe-btn,
+.modal-btn {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
@@ -227,6 +228,7 @@ a,
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: var(--prime-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -256,6 +258,63 @@ a,
 .button-close:hover,
 .button-close:focus {
   fill: var(--active-text-color);
+}
+.modal-form-title {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.modal-form-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: var(--prime-text-color);
+}
+.modal-form-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.modal-form-list-item:last-child {
+  margin: 0;
+}
+.modal-form-list-item label {
+  margin-right: auto;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.modal-form-list-item input,
+.modal-form-list-item textarea {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.modal-form-list-item:hover input,
+.modal-form-list-item:focus input,
+.modal-form-list-item:hover textarea,
+.modal-form-list-item:focus textarea {
+  border: 1px solid var(--active-text-color);
+}
+.modal-form-list-item textarea {
+  height: 120px;
+}
+
+.agreement {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--prime-text-color);
+}
+.modal-btn {
+  padding: 10px 55px 10px 56px;
 }
 
 /********************************* Modal end ****************************************/
