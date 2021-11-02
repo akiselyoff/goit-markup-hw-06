@@ -75,12 +75,19 @@
                       name="person"
                       class="person-input"
                       id="person"
+                      placeholder=" "
                       autofocus
                     />
+                    <svg class="icon icon-person">
+                      <use href="./images/icons.svg#icon-form-person"></use>
+                    </svg>
                   </li>
                   <li class="modal-form-list-item">
                     <label for="tel">Телефон</label>
                     <input type="tel" name="tel" class="tel-input" id="tel" />
+                    <svg class="icon icon-tel">
+                      <use href="./images/icons.svg#icon-form-phone"></use>
+                    </svg>
                   </li>
                   <li class="modal-form-list-item">
                     <label for="mail">Почта</label>
@@ -89,7 +96,11 @@
                       name="mail"
                       class="mail-input"
                       id="mail"
+                      placeholder=" "
                     />
+                    <svg class="icon icon-mail">
+                      <use href="./images/icons.svg#icon-form-mail"></use>
+                    </svg>
                   </li>
                   <li class="modal-form-list-item">
                     <label for="comments">Комментарий</label>
@@ -98,23 +109,24 @@
                       class="comments"
                       id="comments"
                       rows="8"
+                      placeholder="Введите текст"
                     ></textarea>
                   </li>
                 </ul>
-
-                <div class="agreement">
+                <label class="agreement">
                   <input
                     type="checkbox"
                     name="agreement"
                     class="agreement-input"
-                    id="agreement"
                   />
-                  <label for="agreement"
-                    >Соглашаюсь с рассылкой и принимаю<a href=""
-                      >Условия договора</a
-                    >
-                  </label>
-                </div>
+                  <span class="icon-check"></span>
+                  Соглашаюсь с рассылкой и принимаю<a
+                    class="agreement-link"
+                    href=""
+                    >Условия договора</a
+                  >
+                </label>
+
                 <button type="submit" class="btn modal-btn">Отправить</button>
               </form>
             </div>
